@@ -1,0 +1,269 @@
+body {
+    background-color: #000000;
+    color: white;
+}
+
+header {
+    z-index: 9;
+    position: fixed;
+    width: 100%;
+    padding: 8px 0px 8px 0px;
+    -webkit-backdrop-filter: blur(20px);
+backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.719);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+/*offcanvas*/
+
+.btnheader {
+    display: none;
+}
+
+.btnheader {
+    background-color: transparent;
+    border: none !important;
+}
+
+.btnheader > svg {
+    width: 25px;
+    fill: #d6d6d6ff;
+}
+
+.btnheader:active, .btnheader:focus{
+    background-color: transparent !important;
+}
+
+.offcanvas {
+    height: 100vh !important;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+        background-color: rgba(0, 0, 0, 0.719);
+}
+
+
+.btn-close {
+    fill: white !important;
+    background-image: none !important;
+    display: flex;
+    align-items: center;
+    width: 25px !important;
+    justify-content: center;
+}
+
+.btn-close > svg {
+    width: 25px !important;
+}
+
+.search {
+    margin-top: 20px;
+    border: none;
+    padding: 10px;
+    background-color: rgb(12, 12, 12);
+}
+
+/*header*/
+.logo {
+    width: 20px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.linka {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px 50px 0px 50px;
+}
+
+.linka > a {
+    list-style-type: none;
+    font-size: 12px;
+    color: #d6d6d6ff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link {
+    width: 200px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex !important;
+}
+
+.link > a {
+    padding: 10px 15px 10px 15px;
+    background-color: hsl(0deg 0% 19%);
+    border-radius: 10px;
+    font-size: 12px;
+    color: #d6d6d6ff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.link > a:hover {
+    color:  hsl(0deg 0% 19%);
+    background-color: white;
+}
+
+section {
+    margin-top: 30px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+.ab > img {
+    width: 100%;
+    height: 212.19px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.ab > video {
+    width: 350px;
+    height: 212.19px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.ab {
+    border: 1px solid  hsl(0deg 0% 19%);
+    border-radius:10px;
+    height: 555.48px;
+    margin-bottom: 20px;
+}
+
+.text {
+    margin: 20px;
+}
+
+.text > p {
+    height: 192px;
+    overflow-y: auto;
+
+}
+
+.text > h3 {
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid  hsl(0deg 0% 19%);
+}
+
+.pricebox > p {
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.pricebox > .oldprice {
+    font-size: 16px;
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+
+.pricebox {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid  hsl(0deg 0% 19%);
+    padding: 10px 20px 10px 20px;
+}
+
+.pricebox > p > b {
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.pricebox > p {
+    display: flex;
+    align-items: center;
+}
+
+.buy > a {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    background-color: #0167ce;
+    transition: 0.2s;
+}
+
+.buy > a:hover {
+    background-color: #0076ec;
+}
+
+.video > video {
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.video {
+    position: relative;
+    padding-top: 82px;
+}
+
+.textcont {
+    margin: 0 auto;
+    color: white;
+    text-align:  center;
+    width: 550px;
+    display: flex;
+    left: 25%;
+    position: absolute;
+    padding-bottom: 40px;
+}
+
+.textcont > h1 {
+    text-align: center;
+    line-height: 0.9;
+    font-size: 40pt;
+    width: 100%;
+}
+
+section {
+    position: relative;
+    top: -250px;
+}
+
+
+
+@media (max-width: 991px) {
+
+    .btnheader {
+        display: block;
+    }
+
+    .linka {
+        display: none;
+    }
+
+    .link > a {
+        display: none;
+    }
+}
